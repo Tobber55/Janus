@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://chp1rsm6bkyi2"]
+
+[ext_resource type="Script" uid="uid://co38etovo37l6" path="res://Scripts/hotkey_rebind.gd" id="1_je55u"]
+
+[node name="HotkeyRebind" type="Control" groups=["hotkey_button"]]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_je55u")
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(300, 40)
+layout_mode = 0
+offset_right = 350.0
+offset_bottom = 71.0
+scale = Vector2(0.1, 0.1)
+theme_override_font_sizes/font_size = 45
+toggle_mode = true
+text = "fffff"
+
+[connection signal="toggled" from="Button" to="." method="_on_button_toggled"]

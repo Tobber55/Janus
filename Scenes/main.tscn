@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c5keg2myyvigr"]
+
+[ext_resource type="Texture2D" uid="uid://lxgkvv6o5lpp" path="res://Textures/icon.svg" id="1_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://b7eq0lt4yq46i" path="res://Scenes/character.tscn" id="2_8gbba"]
+
+[node name="Node2D" type="Node2D" unique_id=305844436]
+
+[node name="Backgorund" type="Sprite2D" parent="." unique_id=376398007]
+z_index = -1
+position = Vector2(7.499878, 126.499756)
+scale = Vector2(46.054684, 33.460934)
+texture = ExtResource("1_bo1nx")
+
+[node name="CharacterBody2D" parent="." unique_id=1260003172 instance=ExtResource("2_8gbba")]
